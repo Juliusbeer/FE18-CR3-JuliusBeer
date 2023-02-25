@@ -1,0 +1,29 @@
+<div class="container padding">
+    <div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1 row-cols-xs-1 ">
+
+        <div *ngFor="let val of dishes; index as id" class="d-flex justify-content-center p-3">
+
+            <div class="card" style="width: 18rem;">
+                <img src="{{val.img}}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">{{val.name}}</h5>
+                    <p class="card-text">{{val.discription}}</p>
+                    <hr>
+                    <p class="card-text">{{val.price}} €</p>
+                    <hr>
+                    <div *ngIf="val.availability">
+                        <p routerLink="/menu/{{id}}" class="btn btn-primary m-2">Details</p>
+                        <p (click)="addToBasked(id)" class="btn btn-success m-2">Order</p>
+                    </div>
+                    <div *ngIf="!val.availability">
+                        <p class="text-danger">Currently not available</p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>

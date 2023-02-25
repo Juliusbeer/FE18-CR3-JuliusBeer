@@ -1,0 +1,53 @@
+.padding {
+  position: relative;
+  padding-top: 6%;
+}
+
+h1 {
+  padding-bottom: 3%;
+}
+
+img {
+  height: 150px;
+  width: 200px;
+}
+
+.cart {
+  display: flex;
+  justify-content: space-between;
+  padding: 2em;
+}
+.cart .order {
+  width: 60%;
+}
+.cart .order .wide {
+  width: 60%;
+}
+
+.total {
+  display: flex;
+  justify-content: end;
+}
+
+@media screen and (max-width: 800px) {
+  .padding {
+    padding-top: 13%;
+  }
+}
+@media screen and (max-width: 572px) {
+  .padding {
+    padding-top: 20%;
+  }
+  .padding .order {
+    width: 100%;
+  }
+  .padding .order .wide {
+    width: 60%;
+  }
+  .padding .order {
+    justify-content: center;
+  }
+  .padding .total {
+    justify-content: center;
+  }
+}/*# sourceMappingURL=cart.component.css.map */

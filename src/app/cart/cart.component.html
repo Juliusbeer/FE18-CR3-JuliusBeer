@@ -1,0 +1,81 @@
+<!-- <div class="d-flex justify-content-center"> -->
+<div class="container m-3 padding">
+    <h1>You are about to order following dishes:</h1>
+    <div class="cart row row-cols-lg-3 row-cols-md-2 row-cols-sm-1">
+        <div class="order">
+            <div class="card w-100" style="width: 18rem;">
+                <div class="card-header">
+                    <h3>Orders</h3>
+                </div>
+
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <div *ngFor="let val of items">
+                            <div class="d-flex align-items-center">
+                                <div class="flex-shrink-0 p-2">
+                                    <img src="{{val.img}}" alt="...">
+                                </div>
+                                <div class="flex-grow-1 ms-3">
+                                    <h3>{{val.name}}</h3>
+                                    <p>{{val.discription}}</p>
+                                    <p>{{val.price}} €</p>
+                                </div>
+                            </div>
+                            <hr>
+                        </div>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+        <div class="total">
+            <div class="card" style="width: 18rem;">
+                <div class="card-header">
+                    <h3>Total</h3>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <div>
+
+                            <p>The Total of your order is: {{total}} €</p>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <p>10% service: {{service}} €</p>
+                    </li>
+                    <li class="list-group-item">
+                        <h5>Discount 15%: {{discount}} €</h5>
+                    </li>
+                    <li class="list-group-item">
+                        <h4>Total total is: {{totaltotal}} €</h4>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    <hr>
+    <h3>Order Form</h3>
+    <h5>To finalize your order please enter your name and address below:</h5>
+    <form [formGroup]="deliveryForm" (ngSubmit)="onSubmit()">
+        <div>
+            <label class="mt-2" for="name">Name</label>
+            <div>
+                <input id="name" type="text" formControlName="name">
+            </div>
+        </div>
+        <div>
+            <label class="mt-2" for="address">Address</label>
+            <div>
+                <input id="address" type="text" formControlName="address">
+            </div>
+        </div>
+        <button class="btn btn-success mt-3" type="submit">Purchase</button>
+
+    </form>
+
+
+</div>
+<!-- </div> -->

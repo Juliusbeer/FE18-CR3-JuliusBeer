@@ -1,0 +1,15 @@
+<h1>Extra Info like alergenic details about your chosen food</h1>
+<div class="container m-3">
+    <div *ngIf="dish">
+        <div class="d-flex align-items-center pt-4">
+            <div class="flex-shrink-0">
+                <img src="{{dish.img}}" alt="...">
+            </div>
+            <div class="flex-grow-1 ms-3">
+                <p>This dish contains following allergenic(s):</p>
+                <p class="allergenic"> {{dish.allergenic}}</p>
+                <p class="btn btn-success" (click)="addToBasked()">Add to cart</p>
+            </div>
+        </div>
+    </div>
+</div>

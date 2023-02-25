@@ -1,0 +1,23 @@
+img {
+  height: 200px;
+}
+
+a {
+  margin: 2%;
+}
+
+@media screen and (max-width: 992px) {
+  .padding {
+    padding-top: 13%;
+  }
+}
+@media screen and (max-width: 572px) {
+  .padding {
+    padding-top: 20%;
+  }
+}
+@media screen and (min-width: 993px) {
+  .padding {
+    padding-top: 6%;
+  }
+}/*# sourceMappingURL=menu.component.css.map */

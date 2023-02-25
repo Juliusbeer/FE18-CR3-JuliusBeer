@@ -1,0 +1,40 @@
+.bgImg {
+    background-image: url("https://cdn.pixabay.com/photo/2017/01/26/02/06/platter-2009590_1280.jpg");
+    height: 700px;
+    filter: brightness(60%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-attachment: fixed;
+    .text {
+        color: white;
+        filter: brightness(100%);
+    }
+    button {
+        padding: 2%;
+        margin: 2%;
+        border-radius: 8%;
+        border: none;
+        background-color: green;
+        color: white;
+    }
+}
+
+.container {
+    .textBold {
+        font-weight: 800;
+    }
+}
+
+.bgcol {
+    background-color: rgb(243, 243, 243);
+}
+
+.container2 {
+    img {
+        width: 90%;
+    }
+}
