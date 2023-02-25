@@ -48,6 +48,7 @@ export class CartComponent implements OnInit {
     this.totaltotal=0;
     this.service=0;
     this.total=0;
+    this.discount=0;
   }
   
 }
